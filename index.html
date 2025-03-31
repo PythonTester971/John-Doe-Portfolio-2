@@ -12,6 +12,21 @@
 
 <body class="bg-dark txt-white">
     <header class="bg-header-dark">
+
+        <!-- https://codepen.io/joesayegh/pen/jOEVPKO  -->
+
+        <div id="burger-menu">
+            <span></span>
+        </div>
+
+        <div id="menu">
+            <ul>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#gallery">Gallerie</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
         <h1 class="txt-white">John Doe Portfolio</h1>
         <button id="theme" class="bg-dark txt-white btn-border-dark" type="button">Light Theme</button>
     </header>
@@ -29,12 +44,12 @@
 
         </section>
 
-        <section class="about">
+        <section id="about">
             <p>John Doe est un photographe passionné qui capture des images de la nature, des événements et des
                 personnes.</p>
         </section>
 
-        <section class="gallery">
+        <section id="gallery">
             <div class="gallery-item bg-item-dark txt-white">
                 <img src="palmiers.jpg" alt="Palmiers au pied d’un immeuble">
                 <p>Des palmiers pour un voyage haut en couleurs.</p>
@@ -53,18 +68,18 @@
             </div>
         </section>
 
-        <section class="services">
+        <section id="services">
             <h2>Services</h2>
             <p>John Doe propose une gamme de services :</p>
             <ul>
-                <li id="nature">Photographie de la nature</li>
-                <li>Photographie d'événements</li>
-                <li>Portraits</li>
-                <li>Retouche photo</li>
+                <li class="services" id="nature">Photographie de la nature</li>
+                <li class="services" id="events">Photographie d'événements</li>
+                <li class="services" id="portraits">Portraits</li>
+                <li class="services" id="retouching">Retouche photo</li>
             </ul>
         </section>
 
-        <section class="contact">
+        <section id="contact">
             <h2>Contact</h2>
             <p>Email : john@photography.com</p>
             <p>Téléphone : 123-456-7890</p>

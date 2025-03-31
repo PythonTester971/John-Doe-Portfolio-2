@@ -1,4 +1,5 @@
 
+// SLIDER
 //solution trouvée à https://lesdocs.fr/slider-javascript/
 
 // création d'un array de fichier image à chager pour l'attribut src
@@ -33,6 +34,7 @@ setInterval('ChangeSlide(1)', 4000);
 
 
 
+// THEME
 
 const themeButton = document.querySelector('#theme');
 
@@ -74,4 +76,49 @@ themeButton.addEventListener('click', () => {
 
 
 })
+
+
+// BURGER MENU : https://codepen.io/joesayegh/pen/jOEVPKO
+var burgerMenu = document.getElementById('burger-menu');
+
+var overlay = document.getElementById('menu');
+
+burgerMenu.addEventListener('click', function () {
+  this.classList.toggle("close");
+  overlay.classList.toggle("overlay");
+});
+
+// PARAGRAPHE DEPLIANT
+
+//J'ai essayé de refaire ce que tu avais montré.
+//Je ne suis pas sûre d'avoir 100% réussi, mais en tout cas ce que j'ai fait fonctionne :)
+//Je suis un peu fière de moi
+
+// const nature = document.querySelector("#nature");
+// const events = document.querySelector("#events");
+// const portraits = document.querySelector("#portraits");
+// const retouching = document.querySelector("#retouching");
+
+const services = document.querySelectorAll('.services');
+
+services.forEach(function () {
+  services[0].addEventListener('click', function (text) {
+
+    if (paragraphe) {
+
+      document.querySelector("#paragraphe").remove();
+
+    } else {
+
+      let paragraphe = document.createElement("p");
+      nature.appendChild(paragraphe);
+      paragraphe.textContent = text;
+      paragraphe.id = "#paragraphe";
+
+    }
+  })
+
+})
+
+
 
